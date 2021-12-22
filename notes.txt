@@ -1,0 +1,8 @@
+Links:
+https://joachim8675309.medium.com/jenkins-environment-using-docker-6a12603ebf9
+https://stackoverflow.com/questions/42111566/elasticsearch-in-windows-docker-image-vm-max-map-count
+
+create sample maven project
+docker run -it --rm --name my-maven-project -v "$(pwd):/usr/src/mymaven" -w /usr/src/mymaven maven:3.8.4-jdk-11 sh
+run command in sh
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
